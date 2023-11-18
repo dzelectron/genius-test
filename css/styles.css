@@ -1,3 +1,31 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 300;
+  src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 400;
+  src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 600;
+  src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Poppins';
+  font-weight: 900;
+  src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2');
+}
+
 /* First five are a cheatsheet */
 /* class */
 .main-title {
@@ -37,6 +65,14 @@
 /* Base */
 body {
   color: var(--color-primary-dark);
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+address {
+  font-style: normal;
 }
 
 ul {
@@ -46,6 +82,7 @@ ul {
 /* Button */
 .button {
   color: var(--color-primary-light);
+  font-weight: 600;
   background-color: var(--color-brand-light);
   border: 2px solid var(--color-brand-light);
   border-radius: 8px;
@@ -58,17 +95,25 @@ ul {
 }
 
 /* Links */
-.section-link {
+.link {
   color: var(--color-primary-light);
+  font-weight: 400;
+  text-decoration: none;
 }
 
-.section-link:hover {
+.link:hover {
   color: var(--color-brand-light);
+  font-weight: 600;
 }
 
 /* Hero section */
 .hero-title {
   color: var(--color-primary-light);
+  font-family: 'Poppins', sans-serif;
+  font-size: 128px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .hero-title .accent {
@@ -81,6 +126,65 @@ ul {
   color: var(--color-primary-light);
 }
 
+.section-title {
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
 .section-title .accent {
   color: var(--color-brand-dark);
+}
+
+.advantages-item {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* Traditions section */
+.traditions-text .brand {
+  color: var(--color-brand-light);
+  font-weight: 600;
+}
+
+.traditions-text .uppercase {
+  text-transform: uppercase;
+}
+
+/* Chefs section */
+.chef-title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Formats section */
+.formats-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.formats-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* Footer */
+.address-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.address-copyright {
+  color: var(--color-tan);
+  font-size: 14px;
 }
